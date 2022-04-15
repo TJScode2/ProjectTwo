@@ -20,15 +20,14 @@ public class Driver {
 	public static void main (String args []) {
 		//
 		 
-			
-		displayMenu();
-		Scanner scan = new Scanner(System.in);
-		String input = scan.next();
-		System.out.print(input);
-		
+		String input = ""
+		do {
+			displayMenu();
+			Scanner scan = new Scanner(System.in);
+			input = scan.next();
+			System.out.print(input);
+		} while(!input.equalsIgnoreCase('q'))
 	
-			
-		
 	}
 }
 
