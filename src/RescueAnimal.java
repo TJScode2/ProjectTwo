@@ -88,7 +88,6 @@ public class RescueAnimal {
 		this.inServiceCountry = inServiceCountry;
 	}
 
-
 	public String getTrainingStatus() {
 		return trainingStatus;
 	}
