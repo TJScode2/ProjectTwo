@@ -18,10 +18,14 @@ public class Driver {
 	}
 
 	public static void main (String args []) {
-		// Use do while to check input validity after it is entered by user.
+		displayMenu();
+		takeInput();
+	}
+
+	public static void takeInput() {
 		String input = "";
+		// Use do while to check input validity after it is entered by user
 		do {
-			displayMenu();
 			Scanner scan = new Scanner(System.in);
 			input = scan.next();
 			switch(input){
