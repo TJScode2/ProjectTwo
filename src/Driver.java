@@ -25,12 +25,12 @@ public class Driver {
 			Scanner scan = new Scanner(System.in);
 			input = scan.next();
 			switch(input){
-				case "1": System.out.println("Do something")
-				case "2": 
-				case "3": System.out.println("Do something")
-				case "4": 
-				case "5": System.out.println("Do something")
-				case "6":
+				case 1: System.out.println("Do something")
+				case 2: 
+				case 3: System.out.println("Do something")
+				case 4: 
+				case 5: System.out.println("Do something")
+				case 6:
 			}
 		} while(!input.equalsIgnoreCase('q'))
 	}
