@@ -19,20 +19,20 @@ public class Driver {
 
 	public static void main (String args []) {
 		// Use do while to check input validity after it is entered by user.
-		String input = ""
+		String input = "";
 		do {
 			displayMenu();
 			Scanner scan = new Scanner(System.in);
 			input = scan.next();
 			switch(input){
-				case 1: System.out.println("Do something")
-				case 2: 
-				case 3: System.out.println("Do something")
-				case 4: 
-				case 5: System.out.println("Do something")
-				case 6:
+				case "1": System.out.println("Do something"); break;
+				case "2": break;
+				case "3": System.out.println("Do something"); break;
+				case "4": break;
+				case "5": System.out.println("Do something"); break;
+				case "6": break;
 			}
-		} while(!input.equalsIgnoreCase('q'))
+		} while(!input.equalsIgnoreCase("q"));
 	}
 }
 
