@@ -1,5 +1,7 @@
 
-public class Driver {  // This method prints the menu options
+public class Driver {  
+	
+	// This method prints the menu options
     public static void displayMenu() {
         System.out.println("\n\n");
         System.out.println("\t\t\t\tRescue Animal System Menu");
@@ -12,8 +14,9 @@ public class Driver {  // This method prints the menu options
         System.out.println("[q] Quit application");
         System.out.println();
         System.out.println("Enter a menu selection");
+	}
+
 	public static void main (String args []) {
-	
 		
 	}
 }
