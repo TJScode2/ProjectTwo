@@ -16,7 +16,6 @@ public class Monkey extends RescueAnimal {
         setReserved(reserved);
         setInServiceCountry(inServiceCountry);
 	}
-
 	// Accessor Method
 	public boolean getTail() {
 		return tail;
@@ -24,5 +23,4 @@ public class Monkey extends RescueAnimal {
 	public void setTail(boolean hasTail) {
 		tail = hasTail;
 	}
-	
 }
