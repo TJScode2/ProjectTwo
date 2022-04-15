@@ -1,8 +1,7 @@
 
 public class Monkey extends RescueAnimal {	
-	boolean tail;
-	
-	
+	Boolean tail;
+
 	//constructor
 	public Monkey(String name, String animalType, String gender, String age, String weight, String acquisitionDate, String acquisitionCountry, String trainingStatus, Boolean reserved, String inServiceCountry) {
         setName(name);
@@ -16,10 +15,13 @@ public class Monkey extends RescueAnimal {
         setReserved(reserved);
         setInServiceCountry(inServiceCountry);
 	}
+
 	// Accessor Method
-	public boolean getTail() {
+	public Boolean getTail() {
 		return tail;
 	}
+
+    // Mutator
 	public void setTail(boolean hasTail) {
 		tail = hasTail;
 	}
