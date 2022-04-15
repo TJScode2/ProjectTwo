@@ -18,8 +18,7 @@ public class Driver {
 	}
 
 	public static void main (String args []) {
-		//
-		 
+		// Use do while to check input validity after it is entered by user.
 		String input = ""
 		do {
 			displayMenu();
