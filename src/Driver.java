@@ -67,7 +67,7 @@ public class Driver {
 		System.out.println("Is this animal reserved? (true/false)");
         boolean reserved = scanner.nextBoolean();
         
-		for(int i = 0; i <= dogList.size(); i++) {
+		for(int i = 0; i < dogList.size(); i++) {
             if(dogList.get(i).getName().equalsIgnoreCase(name)) {
                 System.out.println("\n\nThis dog is already in our system\n\n");
                 displayMenu();
