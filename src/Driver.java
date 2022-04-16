@@ -47,29 +47,31 @@ public class Driver {
     
     public static void intakeNewDog(Scanner scanner) {
         System.out.println("What is the dog's name?");
-        String name = scanner.nextLine();
+        String name = scanner.next();
         System.out.println("What is this animal's type?");
-        String type = scanner.nextLine();
+        String type = scanner.next();
         System.out.println("What is this animal's gender?");
-        String gender = scanner.nextLine();
+        String gender = scanner.next();
         System.out.println("What is this animal's age?");
-        String age = scanner.nextLine();
+        String age = scanner.next();
         System.out.println("What is this animal's weight?");
-        String weight = scanner.nextLine();
+        String weight = scanner.next();
         System.out.println("When did you acquire this animal?");
-        String acquire = scanner.nextLine();
+        String acquire = scanner.next();
         System.out.println("Where did you acquire this animal?");
-        String country = scanner.nextLine();
+        String country = scanner.next();
         System.out.println("Is this animal trained?");
-        String train = scanner.nextLine();
-        System.out.println("Is this animal reserved?");
-        boolean reserved = scanner.nextBoolean();
+        String train = scanner.next();
         System.out.println("What country is this animal in service?");
-        String service = scanner.nextLine();
-        for(Dog dog: dogList) {
-            if(dog.getName().equalsIgnoreCase(name)) {
+        String service = scanner.next();
+		System.out.println("Is this animal reserved? (true/false)");
+        boolean reserved = scanner.nextBoolean();
+        
+		for(int i = 0; i <= dogList.size(); i++) {
+            if(dogList.get(i).getName().equalsIgnoreCase(name)) {
                 System.out.println("\n\nThis dog is already in our system\n\n");
-                return; //returns to menu
+                displayMenu();
+				return; // returns to menu
             } else {
             	Dog dog4 = new Dog(name, type, gender, age, weight, acquire, country, train, reserved, service); 
                 dogList.add(dog4);	
