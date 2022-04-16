@@ -1,7 +1,11 @@
 import java.util.Scanner;
 
 public class Driver {  
-	
+	public static void main (String args []) {
+		displayMenu();
+		takeInput();
+	}
+
 	// This method prints the menu options
     public static void displayMenu() {
         System.out.println("\n\n");
@@ -15,11 +19,6 @@ public class Driver {
         System.out.println("[q] Quit application");
         System.out.println();
         System.out.println("Enter a menu selection");
-	}
-
-	public static void main (String args []) {
-		displayMenu();
-		takeInput();
 	}
 
 	public static void takeInput() {
