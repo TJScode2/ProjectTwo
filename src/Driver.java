@@ -74,7 +74,8 @@ public class Driver {
 				return; // returns to menu
             } else {
             	Dog dog4 = new Dog(name, type, gender, age, weight, acquire, country, train, reserved, service); 
-                dogList.add(dog4);	
+                dogList.add(dog4);
+				return;	
             }
         }
     }
