@@ -78,6 +78,7 @@ public class Driver {
 				return;	
             }
         }
+		System.out.println(dogList);
     }
 
 
