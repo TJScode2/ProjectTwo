@@ -2,12 +2,16 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Driver {  
-	private static ArrayList<Dog> dogList = new ArrayList<Dog>();
+	private static ArrayList<Dog> dogList = new ArrayList<Dog>(); // Add to this as needed.
+
 	public static void main (String args []) {
 		initializeDogList();
 		displayMenu();
 		takeInput();
 	}
+
+	/**
+	Method used to add dummy values into dogList.  */
     public static void initializeDogList() {
         Dog dog1 = new Dog("Spot", "German Shepherd", "male", "1", "25.6", "05-12-2019", "United States", "intake", false, "United States");
         Dog dog2 = new Dog("Rex", "Great Dane", "male", "3", "35.2", "02-03-2020", "United States", "Phase I", false, "United States");
@@ -18,7 +22,8 @@ public class Driver {
         dogList.add(dog3);
     }
 
-	// This method prints the menu options
+	/**
+	Method used for printing the menu options that will be displayed to user */
     public static void displayMenu() {
         System.out.println("\n\n");
         System.out.println("\t\t\t\tRescue Animal System Menu");
@@ -33,8 +38,10 @@ public class Driver {
         System.out.println("Enter a menu selection");
 	}
 
+	/**
+	Method used to take user input. */
 	public static void takeInput() {
-		String input = "";
+		String input = ""; // initialize input.
 		// Use do while to check input validity after it is entered by user
 		do {
 			Scanner scan = new Scanner(System.in);
@@ -47,7 +54,7 @@ public class Driver {
 				case "5": System.out.println("Do something"); break;
 				case "6": break;
 			}
-		} while(!input.equalsIgnoreCase("q"));
+		} while(!input.equalsIgnoreCase("q")); // Exit
 	}
 }
 
