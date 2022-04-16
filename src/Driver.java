@@ -1,10 +1,22 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Driver {  
+	private static ArrayList<Dog> dogList = new ArrayList<Dog>();
 	public static void main (String args []) {
+		initializeDogList();
 		displayMenu();
 		takeInput();
 	}
+    public static void initializeDogList() {
+        Dog dog1 = new Dog("Spot", "German Shepherd", "male", "1", "25.6", "05-12-2019", "United States", "intake", false, "United States");
+        Dog dog2 = new Dog("Rex", "Great Dane", "male", "3", "35.2", "02-03-2020", "United States", "Phase I", false, "United States");
+        Dog dog3 = new Dog("Bella", "Chihuahua", "female", "4", "25.6", "12-12-2019", "Canada", "in service", true, "Canada");
+
+        dogList.add(dog1);
+        dogList.add(dog2);
+        dogList.add(dog3);
+    }
 
 	// This method prints the menu options
     public static void displayMenu() {
