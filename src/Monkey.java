@@ -3,7 +3,7 @@ public class Monkey extends RescueAnimal {
 	Boolean tail;
 
 	//constructor
-	public Monkey(String name, String animalType, String gender, String age, String weight, String acquisitionDate, String acquisitionCountry, String trainingStatus, Boolean reserved, String inServiceCountry) {
+	public Monkey(String name, boolean tail, String animalType, String gender, String age, String weight, String acquisitionDate, String acquisitionCountry, String trainingStatus, Boolean reserved, String inServiceCountry) {
         setName(name);
         setTail(tail);
         setGender(gender);

@@ -1,6 +1,9 @@
+import java.util.ArrayList;
 
 public class Dog extends RescueAnimal {
+	 private static ArrayList<Dog> dogList = new ArrayList<Dog>();
 
+	 
     // Instance variable
     private String breed;
 
