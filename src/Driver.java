@@ -28,7 +28,7 @@ public class Driver {
 			Scanner scan = new Scanner(System.in);
 			input = scan.next();
 			switch(input){
-				case "1": System.out.println("Do something"); break;
+				case "1": intakeAnimal("Dog"); break;
 				case "2": break;
 				case "3": System.out.println("Do something"); break;
 				case "4": break;
